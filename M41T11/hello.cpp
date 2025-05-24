@@ -79,7 +79,7 @@ int main(void)
         unsigned char oyear = bufferrd[6] & 0xF  ;
         unsigned char tyear = (bufferrd[6] >> 4) ;      
         if(i==0){
-            printf("ST:%d,CEB:%d,CB:%d,OUT:%d,FT:%d,S:%d\n",(bufferrd[0] >> 8) & 0x1,(bufferrd[2] >> 8) & 0x1,(bufferrd[2] >> 7) & 0x1,(bufferrd[7] >> 8) & 0x1,(bufferrd[7] >> 6) & 0x1,(bufferrd[7] >> 5) & 0x1);
+            printf("ST:%d,CEB:%d,CB:%d,OUT:%d,FT:%d,S:%d\n",(bufferrd[0] >> 7) & 0x1,(bufferrd[2] >> 7) & 0x1,(bufferrd[2] >> 6) & 0x1,(bufferrd[7] >> 7) & 0x1,(bufferrd[7] >> 6) & 0x1,(bufferrd[7] >> 5) & 0x1);
 
         }  
 
